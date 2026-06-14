@@ -75,7 +75,7 @@
     }
 
     .hero-image img {
-      width: 75%;
+      width: 55%;
       display: block;
       margin: 0 auto;
       border-radius: 16px;
@@ -467,9 +467,10 @@
 
     /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
-      .hero { grid-template-columns: 1fr; }
-      .hero-image { height: 50vh; }
-      .hero-text { padding: 2rem 1.5rem; }
+      .hero { grid-template-columns: 1fr; padding: 100px 1.5rem 2rem; }
+      .hero-image { order: -1; }
+      .hero-image img { width: 50%; }
+      .hero-text { padding: 1rem 0; }
       .about-grid { grid-template-columns: 1fr; }
       .steps { grid-template-columns: 1fr; }
       nav { padding: 1rem; }
