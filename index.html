@@ -62,12 +62,25 @@
 
     /* ── HERO ── */
     .hero {
-      min-height: 70vh;
+      min-height: 60vh;
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: center;
-      padding-top: 80px;
+      padding: 100px 3rem 3rem 3rem;
       background: var(--light);
+    }
+
+    .hero-image {
+      padding: 1rem;
+    }
+
+    .hero-image img {
+      width: 75%;
+      display: block;
+      margin: 0 auto;
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+      object-fit: cover;
     }
 
     .hero-text {
@@ -135,17 +148,6 @@
       margin-left: 1rem;
     }
     .btn-outline:hover { background: var(--orange); color: var(--white); }
-
-    .hero-image {
-      height: 70vh;
-      overflow: hidden;
-    }
-    .hero-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center top;
-    }
 
     /* ── TRUST BAR ── */
     .trust-bar {
